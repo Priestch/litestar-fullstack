@@ -6,6 +6,7 @@ from .team_invitation import TeamInvitation
 from .team_member import TeamMember
 from .team_roles import TeamRoles
 from .team_tag import team_tag
+from .test_jsonb import TestJsonbModel
 from .user import User
 from .user_role import UserRole
 
@@ -16,6 +17,7 @@ __all__ = (
     "TeamInvitation",
     "TeamMember",
     "TeamRoles",
+    "TestJsonbModel",
     "User",
     "UserOauthAccount",
     "UserRole",

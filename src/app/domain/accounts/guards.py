@@ -108,5 +108,6 @@ auth = OAuth2PasswordBearerAuth[m.User](
         "^/schema",
         "^/public/",
         "^/saq/static/",
+        "^/api/test-jsonb",  # Test endpoints for JSONB bug reproduction
     ],
 )

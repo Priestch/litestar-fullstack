@@ -72,6 +72,7 @@ class ApplicationCore(InitPluginProtocol, CLIPluginProtocol):
         from app.domain.teams import signals as team_signals
         from app.domain.teams.controllers import TeamController, TeamMemberController
         from app.domain.teams.services import TeamMemberService, TeamService
+        from app.domain.test_jsonb.controllers import TestJsonbController
         from app.domain.web.controllers import WebController
         from app.lib.exceptions import ApplicationError, exception_to_http_response
         from app.server import plugins
@@ -118,6 +119,7 @@ class ApplicationCore(InitPluginProtocol, CLIPluginProtocol):
                 UserRoleController,
                 TeamMemberController,
                 TagController,
+                TestJsonbController,
                 WebController,
             ],
         )
